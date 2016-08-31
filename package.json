@@ -1,0 +1,39 @@
+{
+  "name": "dumpdesk",
+  "version": "0.0.0",
+  "description": "Dump/backup cases from desk.com",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@code42day.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": "pirxpilot/dumpdesk",
+  "license": "MIT",
+  "keywords": [
+    "dumpdesk",
+    "desk",
+    "desk.com"
+  ],
+  "dependencies": {
+    "async": "^2.0.1",
+    "mniam": "^1.6.1",
+    "superagent": "^2.2.0",
+    "yargs": "^5.0.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.3",
+    "mocha": "^3.0.2",
+    "should": "^11.1.0"
+  },
+  "bin": {
+    "dumpdesk": "bin/dumpdesk"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "make check"
+  }
+}
