@@ -1,8 +1,12 @@
 var dumpdesk = require('./lib/dumpdesk');
 
 var argv = require('yargs')
+  .usage('$0 [options]')
   .env('DUMPDESK')
   .config()
+  .describe('user', 'desk.com username')
+  .describe('password', 'desk.com password')
+  .describe('host', '<yoursite>.desk.com')
   .demand('user')
   .demand('password')
   .demand('host')

@@ -4,20 +4,26 @@
 
 # dumpdesk
 
-Dump/backup cases from desk.com
+Dump/backup cases from desk.com to mongo DB
 
 ## Install
 
 ```sh
-$ npm install --save dumpdesk
+$ npm install --global dumpdesk
 ```
 
 ## Usage
 
-```js
-var dumpdesk = require('dumpdesk');
+```
+dumpdesk [options]
 
-dumpdesk('Rainbow');
+Options:
+  --config    Path to JSON config file
+  --user      desk.com username                                       [required]
+  --password  desk.com password                                       [required]
+  --host      <yoursite>.desk.com                                     [required]
+  --database                     [default: "mongodb://localhost:27017/desk_com"]
+
 ```
 
 ## License
