@@ -18,6 +18,7 @@
     "async": "^2.0.1",
     "debug": "^2.2.0",
     "mniam": "^1.6.1",
+    "rate-limit": "^0.1.1",
     "superagent": "^2.2.0",
     "yargs": "^5.0.0"
   },
